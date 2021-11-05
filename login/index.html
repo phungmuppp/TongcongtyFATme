@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,29 +31,28 @@
         <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>
         <?php } ?>
-        <div class="form-input">
+        <div class="form-group">
           <input type="text" name="SDT" placeholder="Nhập số điện thoại" class="input-text" /><br />
-          <input
-            type="password"
-            name="password"
-            placeholder="Nhập mật khẩu"
-            class="input-text"/>
+          <input type="password" name="password" placeholder="Nhập mật khẩu" />
           <button type="submit" class="btn-submit">Đăng nhập</button>
         </div>
-        <p><a href="#" class="sub-link semibold">Quên mật khẩu</a></p>
-        <p>Hoặc</p>
+        <p class="m-20-0"><a href="#" class="semi-bold sub-link">Quên mật khẩu</a></p>
+        <div class="m-40-0 upcase light or">
+          <span class="abs-text">hoặc</span>
+          <hr>
+        </div>
         <ul>
           <li>
-            <a href="#"><i class="fab fa-facebook" id="fb"></i></a>
+            <a href="#"><i class="fab fa-facebook icon" id="fb"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-apple" id="apple"></i></a>
+            <a href="#"><i class="fab fa-apple icon" id="apple"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-google-plus" id="gg"></i></a>
+            <a href="#"><i class="fab fa-google-plus icon" id="gg"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-twitter" id="tw"></i></a>
+            <a href="#"><i class="fab fa-twitter icon" id="tw"></i></a>
           </li>
         </ul>
       </form>
