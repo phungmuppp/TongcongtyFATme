@@ -6,7 +6,14 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-
+:root {
+  --color-primary: #ff5500;
+  --color-secondary: #ffb300;
+  --color-button-main: #ff5500;
+  --color-button-hover: #ff7C3a;
+  --color-button-edit: #ebebeb;
+  --color-background: #f5f5f5;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -21,6 +28,7 @@ body {
   width: 1250px;
   height: 95px;
   margin-left: 6%;
+  
 }
 
 .centered {
@@ -41,6 +49,7 @@ body {
   display: inline;
 } */
 .img_icon {
+  color: var(--color-primary);
   width: 250px;
   height: 70px;
 }
@@ -51,7 +60,7 @@ body {
 }
 .search button:hover {
   color: white;
-  background-color: #f5ae8b;
+  background-color: var(--color-button-hover);
 }
 
 .type_search {
@@ -75,11 +84,11 @@ body {
   height: 40px;
   border: none;
   color: white;
-  background-color: #fe7b39;
+  background-color: var(--color-button-main);
 }
 
 .btn_account:focus {
-  background-color: #fe7b39;
+  background-color: var(--color-button-hover);
   color: white;
   display: block;
   padding-left: 35%;
@@ -93,7 +102,7 @@ body {
   text-align: left;
 }
 .btn_account:focus .btn_down {
-  background-color: #fe7b39;
+  background-color: var(--color-button-hover);
   color: white;
   display: block;
   padding-left: 35%;
@@ -127,20 +136,20 @@ body {
 }
 
 .icon a:hover {
-  color: #f5ae8b;
+  color: var(--color-button-hover);
 }
 .icon a {
 
   border: none;
-  color: #fe7b39;
+  color: var(--color-button-main);
 }
 .icon a:focus {
-  color: #f5ae8b;
+  color: var(--color-button-hover);
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #fe7b39;
+  background-color: var(--color-button-main);
   width: 1250px;
   height: 40px;
   margin-left: 6%;
@@ -153,10 +162,10 @@ body {
   padding: 10px 10px 15px 10px;
 }
 .navbar a:hover {
-  background-color: #f5ae8b;
+  background-color: var(--color-button-hover);
 }
 .navbar a:focus {
-  background-color: #f5ae8b;
+  background-color: var(--color-button-hover);
 }
 .style_button_home {
   width: 60px;
@@ -168,8 +177,9 @@ body {
 .body_container {
   width: 1250px;
   height: 800px;
-  margin-left: 6%;
+  margin-left: 5%;
   height: 800px;
+  
 }
 .dropbtn {
   background-color: white;
@@ -196,7 +206,7 @@ body {
   /* position: absolute; */
   background-color: white;
   width: 170px;
-  height: 180px;
+  height: 185px;
   z-index: 1;
   margin-top: 5%;
 }
@@ -216,7 +226,7 @@ body {
   
 }
 .dropdown-content i{
-  color:#fe7b39;
+  color:var(--color-button-main);
 }
 .dropdown-content i {
   padding-right: 10px;
@@ -236,7 +246,7 @@ body {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #fe7b39;
+  background-color: var(--color-button-hover);
   color: white;
 }
 
@@ -256,7 +266,7 @@ body {
 .footer h1 {
   text-align: center;
   font-size: 50px;
-  color: #fe7b39;
+  color: #ff5500;
 }
 .info_fatme {
   margin-top: 1%;
@@ -291,4 +301,5 @@ body {
 .frame_menu {
   width: 100%;
   height: 100%;
+  margin-left: 1%;
 }
