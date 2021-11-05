@@ -2,7 +2,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
   background-image: linear-gradient(to left, rgb(253, 121, 55), rgb(232, 210, 199));
