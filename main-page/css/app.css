@@ -6,3 +6,288 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+.main_container{
+  width: 1500px;
+  max-height: 1200px;
+}
+
+.header_container{
+  background-image: url(/img/background-img.gif);
+  width: 1250px;
+  height: 95px;
+  margin-left: 6%;
+}
+
+.centered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.list_menu{
+  width: 1500px;
+  list-style-type: none;
+  display: flex;
+}
+.list_menu li{
+  padding-left: 6%;
+}
+/* li{
+  display: inline;
+} */
+.img_icon{
+  width: 250px;
+}
+.search{
+  width: 550px;
+  height: 50px;
+  padding-top: 5%;
+}
+.search button:hover{
+  color:white;
+  background-color: #f5ae8b;
+}
+
+.type_search{
+  width: 350px;
+  height: 40px;
+  padding-left: 8%;
+  border: none;
+  color: grey;
+  font-size: 15px;
+}
+.search i{
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 10px;
+  color: grey;
+}
+.search button{
+  position: absolute;
+  margin-left: auto;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: #fe7b39;
+}
+
+
+
+.btn_account:focus{
+  background-color:#fe7b39 ;
+  color: white;
+  display: block;
+  padding-left: 35%;
+}
+
+
+.btn_down a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.btn_account:focus .btn_down{
+  background-color:#fe7b39 ;
+  color: white;
+  display: block;
+  padding-left: 35%;
+}
+.btn_down{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+.btn_down a{
+  float: none;
+  /* color: black; */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.style_icon{
+  padding-top: 2%;
+  margin-left: -9%;
+  margin-right: 3%;
+}
+.icon{
+  list-style-type: none;
+  display: flex;
+}
+.icon li{
+  margin-left: 10%;
+}
+.icon i{
+  font-size: 40px;
+  /* color: #fe7b39; */
+}
+.icon_width{
+  margin-right: 2%;
+}
+.icon a:hover{
+  color:#f5ae8b;
+  /* background-color: #df9068; */
+}
+.icon a{
+  background-color: #fdf4e3;
+  border: none;
+  color: #fe7b39;
+}
+.icon a:focus{
+  /* background-color:#fe7b39 ; */
+  color: #f5ae8b;
+}
+
+.navbar{
+  overflow: hidden;
+  background-color: #fe7b39;
+  width: 1250px;
+  height: 40px;
+  margin-left: 6%;
+  
+}
+.navbar a{
+  float: left;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px 10px 15px 10px;
+}
+.navbar a:hover{
+  background-color: #f5ae8b;
+}
+.navbar a:focus{
+  background-color: #f5ae8b;
+}
+.style_button_home{
+  width: 60px;
+  height: 40px;
+  color: white;
+  
+  border: none;
+}
+.body_container{
+  width: 1250px;
+  height: 800px;
+  margin-left: 6%;
+  height: 800px;
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  width: 155px;
+  padding-left: 55px;
+}
+.li_account{
+  margin-top: 1.5%;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  /* position: absolute; */
+  background-color: #f1f1f1;
+  width: 160px;
+  height: 168px;
+  z-index: 1;
+  background-color: #fe7b39;
+  border-radius: 30px;
+  margin-top: -33%;
+  padding-top: 40%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content i{
+  padding-right: 10px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f5ae8b;
+  border-radius: 50px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #fe7b39;
+  color: white;
+}
+
+.img_account{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+.footer{
+  background-image: url(/img/background-img.gif);
+  width: 1250px;
+  height: 180px;
+  background-color: #f8efe2;
+  margin-left: 6%;
+}
+.footer h1{
+  text-align: center;
+  font-size: 50px;
+  color:#fe7b39;
+}
+.info_fatme{
+  margin-top: 1%;
+}
+.info_fatme ul{
+  display: inline-block;
+  zoom:1;  
+  width: 1250px;
+  margin-left: 35%;
+}
+.info_fatme li{
+  float: left;
+  list-style-type: none;
+  margin-right: 5%;
+  font-size: 30px;
+}
+.icon_fatme{
+  margin-top: 1%;
+}
+.icon_fatme ul{
+  display: inline-block;
+  zoom:1;  
+  width: 1250px;
+  margin-left: 40%;
+}
+.icon_fatme li{
+  float: left;
+  list-style-type: none;
+  margin-right: 6%;
+  font-size: 35px;
+}
+.frame_menu{
+  width: 100%;
+  height: 100%;
+}
