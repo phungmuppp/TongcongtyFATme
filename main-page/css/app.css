@@ -17,7 +17,7 @@ body {
 }
 
 .header_container{
-  background-image: url(/img/background-img.gif);
+  background-image: url(/main-page/images/background-img.gif);
   width: 1250px;
   height: 95px;
   margin-left: 6%;
@@ -246,7 +246,7 @@ body {
   border-radius: 30px;
 }
 .footer{
-  background-image: url(/img/background-img.gif);
+  background-image: url(/main-page/images/background-img.gif);
   width: 1250px;
   height: 180px;
   background-color: #f8efe2;
