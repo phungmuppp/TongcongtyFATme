@@ -5,4 +5,86 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
+  background-image: linear-gradient(to left, rgb(253, 121, 55), rgb(232, 210, 199));
+}
+img {
+  float: left;
+  width: 650px;
+}
+h2 {
+  text-align: center;
+  font-family: "Bold", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 91, 9);
+}
+form {
+  background-color: white;
+  float: right;
+  min-height: 438px;
+  min-width: 296px;
+  margin-right: 100px;
+  margin-top: 100px;
+  border-radius: 30px;
+}
+.header {
+  margin-top: 30px;
+}
+input {
+  outline: none;
+  display: block;
+  border: 2px solid #ccc;
+  width: 80%;
+  padding: 10px;
+  margin: -5px auto;
+  border-radius: 100px;
+}
+button {
+  display: block;
+  width: 87%;
+  background: rgb(255, 91, 9);
+  padding: 10px;
+  color: #fff;
+  border-radius: 100px;
+  margin: 10px auto;
+  border: none;
+  box-shadow: 0px 3px rgb(232, 210, 199);
+}
+button:hover {
+  opacity: 0.7;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+li a {
+  font-size: 30px;
+  margin: auto;
+}
+#fb {
+  color: rgb(59, 89, 152);
+}
+#apple {
+  color: black;
+}
+#gg {
+  color: rgb(220, 78, 65);
+}
+#tw {
+  color: rgb(85, 172, 238);
+}
+.error {
+  display: block;
+  /* background: #F2DEDE; */
+  color: #a94442;
+  padding: 10px;
+  width: 93%;
+  margin: auto;
 }
