@@ -20,6 +20,68 @@
       crossorigin="anonymous"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form action="./register.php" method="post" class="form-register">
+        <h1 class="header-text bold">Tạo tài khoản</h1>
+        <p class="sub-text">
+          Bạn đã có tài khoản?
+          <a href="../index.php" class="sub-link">Đăng nhập</a>
+        </p>
+
+        <?php if (isset($_GET['error'])) { ?>
+        <p class="error"><?php echo $_GET['error']; ?></p>
+        <?php } ?>
+
+        <div class="form-group">
+          <input type="text" name="SDT" placeholder="Nhập số điện thoại" class="input-text" />
+          <div class="relative">
+            <input
+              id="passwd1"
+              type="password"
+              name="password"
+              placeholder="Nhập mật khẩu"
+              class="input-text"
+            />
+            <i class="fas fa-eye showpwd" onclick="showPassword('passwd1', this)"></i>
+          </div>
+          <div class="relative">
+            <input
+              id="passwd2"
+              type="password"
+              name="repassword"
+              placeholder="Nhập lại mật khẩu"
+              class="input-text"
+            />
+            <i class="fas fa-eye showpwd" onclick="showPassword('passwd2', this)"></i>
+          </div>
+          <div class="dieukhoan">
+            <input type="checkbox" name="checkbox" class="input-checkbox" id="checkbox" />
+            <label for="checkbox" class="sub-link">Chấp nhận điều khoản và dịch vụ</label>
+          </div>
+          <button type="submit">Đăng ký</button>
+        </div>
+        <p class="m-20-0"><a href="#" class="semi-bold sub-link">Quên mật khẩu</a></p>
+        <div class="m-40-0 upcase light or">
+          <span class="abs-text">hoặc</span>
+          <hr />
+        </div>
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook icon" id="fb"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-apple icon" id="apple"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-google-plus icon" id="gg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter icon" id="tw"></i></a>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
   <script src="./scripts/index.js"></script>
 </html>
