@@ -1,18 +1,35 @@
+:root {
+    --color-primary: #ff5500;
+    --color-secondary: #ffb300;
+    --color-button-main: #ff5500;
+    --color-button-hover: #ff7C3a;
+    --color-button-edit: #ebebeb;
+    --color-background: #f6f6f6;
+  }
+body{
+    font-family: "Source Sans Pro", sans-serif;
+}
 .main_info{
     width: 1250px;
     height: 800px;
 }
 .menu{
     float: left;
-    width: 300px;
+    width: 230px;
     height: 800px;
 }
 .page_info{
+    background-color: var(--color-background);
     float: left;
-    width: 950px;
+    width: 1020px;
     height: 800px;
 }
 .frame_menu{
-    width: 300px;
+    width: 230px;
     height: 800px;
+}
+.info_container{
+    width: 1000px;
+    height: 100%;
+    margin-left: 1%;
 }
