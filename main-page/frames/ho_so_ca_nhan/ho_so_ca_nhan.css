@@ -1,0 +1,18 @@
+.main_info{
+    width: 1250px;
+    height: 800px;
+}
+.menu{
+    float: left;
+    width: 300px;
+    height: 800px;
+}
+.page_info{
+    float: left;
+    width: 950px;
+    height: 800px;
+}
+.frame_menu{
+    width: 300px;
+    height: 800px;
+}
