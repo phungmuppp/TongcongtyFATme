@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main-page/frames/menu/menu.css">
+    <link rel="stylesheet" href="css/app.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -14,36 +14,54 @@
     
 </head>
 <body>
-    <div class="menu">
-        <div class="menu_style">
-            <ul>
-                <li class="main_type"><i class="fas fa-utensils"></i><a class="style_a">Sản phẩm</a></li>
-                <li><a href="">Danh sách sản phẩm</a></li>
-                <li><a href="">Danh mục sản phẩm</a></li>
+    <div class="container-content">
+        <div class="content-menu">
+            <ul class="menu">
+               
+                   <h3><i class="fas fa-utensils"> &nbsp;&nbsp; </i>Sản Phẩm</h3>
+
+                <li>
+                    <ul class="sub-menu">
+                        <li> <a target="content-list" href="frames/Danh_sach_san_pham/index.html">Danh sách sản phẩm</a></li>
+                        <li> <a target="content-list" href="">Danh mục sản phẩm</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul class="menu"><h3><i class="fas fa-clipboard">&nbsp;&nbsp;</i>Đơn Hàng</h3>
+                <li>
+                    <ul class="sub-menu">
+                        <li> <a target="content-list" href="">Tất cả đơn hàng</a></li>
+                        <li> <a target="content-list" href="">Tạo đơn hàng</a></li>
+                        <li> <a target="content-list" href="">Đơn hàng nháp</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu"><h3> <i class="fas fa-gift">&nbsp;&nbsp;</i>  Khuyến mãi</h3>
+                <li>
+                    <ul class="sub-menu">
+                        <li> <a target="content-list" href="">Mã khuyến mãi</a></li>
+                        <li> <a target="content-list" href="">Chương trình khuyến mãi</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu"><h3><i class="fas fa-tools">&nbsp;&nbsp;</i>Cấu hình</h3>
+                <li>
+                    <ul class="sub-menu">
+                        <li > <a target="content-list" href="">Phương thức thanh toán</a></li>
+                        <li> <a target="content-list" href="">Phương thức vận chuyển</a></li>
+                        <li> <a target="content-list" href="">Thồn báo</a></li>
+                        <li> <a target="content-list" href="">Tài khoản và phân quyền</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
-        <div class="menu_style" style="height: 150px;">
-            <ul>
-                <li class="main_type"><i class="fas fa-clipboard"></i><a class="style_a">Đơn hàng</a></li>
-                <li><a href="">Tất cả đơn hàng</a></li>
-                <li><a href="">Tạo đơn hàng</a></li>
-                <li><a href="">Đơn hàng nháp</a></li>
-            </ul>
+        <div class="menu-iframe">
+            <iframe src=""  name="content-list" frameborder="0"></iframe>
         </div>
-        <div class="menu_style">
-            <ul>
-                <li class="main_type"><i class="fas fa-gift"></i><a class="style_a">Khuyễn mãi</a></li>
-                <li><a href="">Mã khuyến mãi</a></li>
-                <li><a href="">Chương trình khuyến mãi</a></li>
-            </ul>
-        </div>
-        <div class="menu_style">
-            <ul>
-                <li class="main_type"><i class="fas fa-tools"></i><a class="style_a">Cấu hình</a></li>
-                <li><a href="">Thông báo</a></li>
-                <li><a href="">Tài khoản và phân quyền</a></li>
-            </ul>
-        </div>
+       
+    </div>
+       
     </div>
 </body>
 </html>
