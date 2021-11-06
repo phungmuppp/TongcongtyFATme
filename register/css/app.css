@@ -51,6 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem;
 }
 .form-register {
   width: 100%;
@@ -70,7 +71,7 @@ body {
   font-weight: 400;
 }
 .form-register .form-group {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
 }
 .form-register .form-group .input-text {
@@ -94,7 +95,18 @@ body {
   align-items: center;
 }
 .dieukhoan .input-checkbox {
-  margin: 1rem;
+  margin: 0 1rem;
+  border: #ddd;
+  cursor: pointer;
+}
+.dieukhoan .label-checkbox {
+  color: #999;
+}
+.dieukhoan .label-checkbox:hover {
+  color: var(--color-primary);
+}
+.input-checkbox:checked + label {
+  color: var(--color-primary);
 }
 .form-register .form-group button {
   width: 100%;
@@ -167,7 +179,7 @@ ul li .icon {
   width: 93%;
   margin: auto;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .form-register {
     display: block;
     margin: 0 auto;
@@ -177,12 +189,6 @@ ul li .icon {
 @media only screen and (max-width: 768px) {
   .form-register {
     padding: 2.5rem;
-  }
-  .form-register h1 {
-    font-size: 3rem;
-  }
-  .form-register .sub-text {
-    font-size: 1.4rem;
   }
   .form-register .form-group {
     margin-top: 2rem;
@@ -201,10 +207,30 @@ ul li .icon {
   .or .abs-text {
     font-size: 1.4rem;
   }
-  .or hr {
-    width: 80%;
+}
+@media only screen and (max-width: 480px) {
+  .form-register {
+    padding: 2.5rem;
+  }
+  .form-register .form-group {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .form-register .form-group input {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .form-register .form-group button {
+    font-size: 1.8rem;
+  }
+  .or {
+    margin-top: 2rem;
+  }
+  .or .abs-text {
+    font-size: 1.2rem;
   }
 }
+
 .sub-link {
   display: inline-block;
   position: relative;

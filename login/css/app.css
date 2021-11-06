@@ -51,6 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem;
 }
 .form-login {
   width: 100%;
@@ -156,7 +157,7 @@ ul li .icon {
   width: 93%;
   margin: auto;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .form-login {
     display: block;
     margin: 0 auto;
@@ -166,12 +167,6 @@ ul li .icon {
 @media only screen and (max-width: 768px) {
   .form-login {
     padding: 2.5rem;
-  }
-  .form-login h1 {
-    font-size: 3rem;
-  }
-  .form-login .sub-text {
-    font-size: 1.4rem;
   }
   .form-login .form-group {
     margin-top: 2rem;
@@ -190,8 +185,27 @@ ul li .icon {
   .or .abs-text {
     font-size: 1.4rem;
   }
-  .or hr {
-    width: 80%;
+}
+@media only screen and (max-width: 480px) {
+  .form-login {
+    padding: 2.5rem;
+  }
+  .form-login .form-group {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .form-login .form-group input {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .form-login .form-group button {
+    font-size: 1.8rem;
+  }
+  .or {
+    margin-top: 2rem;
+  }
+  .or .abs-text {
+    font-size: 1.2rem;
   }
 }
 .sub-link {
