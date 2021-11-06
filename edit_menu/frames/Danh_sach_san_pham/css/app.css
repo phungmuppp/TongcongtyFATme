@@ -1,0 +1,132 @@
+:root {
+  --color-primary: #ff5500;
+  --color-secondary: #ffb300;
+  --color-button-main: #ff5500;
+  --color-button-hover: #ff7C3a;
+  --color-button-edit: #ebebeb;
+  --color-background: #f6f6f6;
+}
+body{
+  font-family: "Source Sans Pro", sans-serif;
+}
+.main_info{
+  width: 100%;
+  
+}
+.page_info{
+  width: 100%;
+  background-color: var(--color-background);
+  float: left;
+
+}
+h1{
+  margin-top: 0px;
+}
+.info_container{
+  
+  height: 100%;
+}
+.product {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  padding: 0;
+  align-items:center;
+  padding-bottom:  1rem;
+}
+.ex_in_port {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.product i{
+  margin-right: 1rem;
+  color: var(--color-primary);
+}
+.product > div > button{
+  background-color:var(--color-primary);
+  color: white;
+  width: 10rem;
+  height: 2.5rem;
+  border: none;
+}
+.product button:hover{
+  background-color: var(--color-button-hover);
+}
+.product li:last-child{
+  margin-left: auto;
+}
+.product a{
+  
+  text-decoration: none;
+  color: black;
+}
+.all_product{
+  height: 150px;
+  padding: 15px;
+  box-shadow: 0px 0px 4px 0 rgb(0 0 0 / 7%);
+  border-radius: 7px;
+  background-color: white;
+}
+
+.heading a{
+  color: black;
+  text-decoration: none;
+}
+.heading {
+ 
+  width: 120px;
+  height: 35px;
+  display: inline-block;
+  position: relative;
+  color: var(--color-button-hover);
+}
+
+.heading :after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: var(--color-button-hover);
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.heading :hover:after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+/* .heading a:hover{
+  border-bottom: var(--color-button-hover);
+} */
+
+hr{
+  margin-top: -1px;
+}
+.nav_select{
+  height: 40px;
+  padding: 0 0 0 10px;
+}
+.nav_select select{
+  width: 120px;
+  background-color: var(--color-background);
+  height: 30px;
+}
+.nav_select button{
+  background-color: var(--color-primary);
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none;
+  float: right;
+  margin-right: 1rem;
+}
+.nav_select i{
+  padding-right: 1%;
+}
+.nav_select button:hover{
+  background-color: var(--color-button-hover);
+}
