@@ -28,11 +28,6 @@
           Bạn đã có tài khoản?
           <a href="../index.php" class="sub-link">Đăng nhập</a>
         </p>
-
-        <?php if (isset($_GET['error'])) { ?>
-        <p class="error sub-text"><?php echo $_GET['error']; ?></p>
-        <?php } ?>
-
         <div class="form-group">
           <input type="text" name="SDT" placeholder="Nhập số điện thoại" class="input-text" />
           <div class="relative">
@@ -56,11 +51,22 @@
             <i class="fas fa-eye showpwd" onclick="showPassword('passwd2', this)"></i>
           </div>
           <div class="dieukhoan">
-            <input type="checkbox" name="checkbox" class="input-checkbox" id="checkbox" placeholder=" "/>
+            <input
+              type="checkbox"
+              name="checkbox"
+              class="input-checkbox"
+              id="checkbox"
+              placeholder=" "
+            />
             <label for="checkbox" class="label-checkbox">Chấp nhận điều khoản và dịch vụ</label>
           </div>
           <button type="submit">Đăng ký</button>
         </div>
+        <?php if (isset($_GET['error'])) { ?>
+        <p class="error sub-text">
+          <?php echo $_GET['error']; ?>Mật khẩu không trùng khớp!
+        </p>
+        <?php } ?>
         <p class="m-20-0"><a href="#" class="semi-bold sub-link">Quên mật khẩu</a></p>
         <div class="m-40-0 upcase light or">
           <span class="abs-text">hoặc</span>

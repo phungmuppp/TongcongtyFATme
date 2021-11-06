@@ -26,24 +26,25 @@
         <h1 class="header-text bold">Đăng nhập</h1>
         <p class="sub-text">Chào bạn, đăng nhập để tiếp tục !</p>
         <p class="sub-text">
-          Hoặc<a href="register/dangky.php" class="sub-link">Tạo tài khoản mới</a>
+          Hoặc <a href="register/dangky.php" class="sub-link">Tạo tài khoản mới</a>
         </p>
-        <?php if (isset($_GET['error'])) { ?>
-        <p class="error"><?php echo $_GET['error']; ?></p>
-        <?php } ?>
         <div class="form-group">
-          <input type="text" name="SDT" placeholder="Nhập tên tài khoản" class="input-text" /><br />
+          <input
+            type="text"
+            name="SDT"
+            placeholder="Số điện thoại, tên người dùng hoặc email"
+            class="input-text"
+            autocomplete="username"
+          /><br />
           <div class="relative">
-            <input
-              type="password"
-              name="password"
-              placeholder="Nhập mật khẩu"
-              id="passwd"
-            />
+            <input type="password" name="password" placeholder="Mật khẩu" id="passwd" class="input-text"/>
             <i class="fas fa-eye showpwd" onclick="showPassword('passwd', this)"></i>
           </div>
           <button type="submit">Đăng nhập</button>
         </div>
+        <?php if (isset($_GET['error'])) { ?>
+        <p class="error sub-text"><?php echo $_GET['error']; ?>Tên đăng nhập hoặc mật khẩu không đúng!</p>
+        <?php } ?>
         <p class="m-20-0"><a href="#" class="semi-bold sub-link">Quên mật khẩu</a></p>
         <div class="m-40-0 upcase light or">
           <span class="abs-text">hoặc</span>

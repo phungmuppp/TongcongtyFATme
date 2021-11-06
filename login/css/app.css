@@ -34,6 +34,9 @@ body {
 .sub-link:hover {
   color: var(--color-button-hover);
 }
+.m-10-0 {
+  margin: 1rem 0;
+}
 .m-20-0 {
   margin: 2rem 0;
 }
@@ -55,7 +58,7 @@ body {
 }
 .form-login {
   width: 100%;
-  max-width: 400px;
+  max-width: 430px;
   padding: 3.5rem;
   background: #fff;
   border-radius: 2rem;
@@ -67,14 +70,23 @@ body {
   margin-bottom: 3rem;
 }
 .form-login .sub-text {
-  font-size: 1.6rem;
+  font-size: 1.rem;
   font-weight: 400;
 }
-.form-login .form-group {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.form-login .error {
+  color: #ff3333;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  background-color: #ffd6d6;
+  padding: 0.5rem 1rem;
+  /* display: none; */
 }
-.form-login .form-group input {
+.form-login .form-group {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.form-login .form-group .input-text {
   width: 100%;
   padding: 1.5rem;
   border: 1px solid #ddd;
@@ -83,8 +95,12 @@ body {
   outline: none;
   margin-bottom: 1rem;
 }
-.form-login .form-group input:focus {
+.form-login .form-group .input-text:focus {
   border: 1px solid var(--color-primary);
+}
+.form-login .form-group .input-text::placeholder {
+  color: #aaa;
+  font-size: 1.6rem;
 }
 .form-login .form-group button {
   width: 100%;
@@ -149,14 +165,6 @@ ul li .icon {
 #tw {
   color: rgb(85, 172, 238);
 }
-.error {
-  display: block;
-  /* background: #F2DEDE; */
-  color: #a94442;
-  padding: 10px;
-  width: 93%;
-  margin: auto;
-}
 @media only screen and (min-width: 1025px) {
   .form-login {
     display: block;
@@ -172,8 +180,11 @@ ul li .icon {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .form-login .form-group input {
+  .form-login .form-group .input-text {
     padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .form-login .form-group .input-text::placeholder {
     font-size: 1.4rem;
   }
   .form-login .form-group button {
@@ -196,6 +207,9 @@ ul li .icon {
   }
   .form-login .form-group input {
     padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .form-login .form-group .input-text::placeholder {
     font-size: 1.2rem;
   }
   .form-login .form-group button {

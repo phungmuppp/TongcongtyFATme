@@ -55,13 +55,14 @@ body {
 }
 .form-register {
   width: 100%;
-  max-width: 400px;
+  max-width: 430px;
   padding: 3.5rem;
   background: #fff;
   border-radius: 2rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .form-register h1 {
   font-size: 4rem;
   margin-bottom: 3rem;
@@ -70,9 +71,18 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
 }
+.form-register .error {
+  color: #ff3333;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  background-color: #ffd6d6;
+  padding: 0.5rem 1rem;
+  /* display: none; */
+}
 .form-register .form-group {
   margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .form-register .form-group .input-text {
   width: 100%;
@@ -83,8 +93,12 @@ body {
   outline: none;
   margin-bottom: 1rem;
 }
-.form-register .form-group .input-text:focus{
+.form-register .form-group .input-text:focus {
   border: 1px solid var(--color-primary);
+}
+.form-login .form-group .input-text::placeholder {
+  color: #aaa;
+  font-size: 1.6rem;
 }
 .form-register .form-group .input-text:focus + i {
   color: var(--color-primary);
@@ -171,14 +185,6 @@ ul li .icon {
 #tw {
   color: rgb(85, 172, 238);
 }
-.error {
-  display: block;
-  /* background: #F2DEDE; */
-  color: #a94442;
-  padding: 10px;
-  width: 93%;
-  margin: auto;
-}
 @media only screen and (min-width: 1025px) {
   .form-register {
     display: block;
@@ -194,8 +200,11 @@ ul li .icon {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .form-register .form-group input {
+  .form-register .form-group .input-text {
     padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .form-login .form-group .input-text::placeholder {
     font-size: 1.4rem;
   }
   .form-register .form-group button {
@@ -216,8 +225,11 @@ ul li .icon {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .form-register .form-group input {
+  .form-register .form-group .input-text {
     padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .form-login .form-group .input-text::placeholder {
     font-size: 1.2rem;
   }
   .form-register .form-group button {
@@ -238,7 +250,7 @@ ul li .icon {
 }
 
 .sub-link:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -257,14 +269,14 @@ ul li .icon {
 .relative {
   position: relative;
 }
-.relative  i {
+.relative i {
   position: absolute;
   right: 2rem;
   top: 50%;
   transform: translateY(calc(-50% - 0.5rem));
   color: #ddd;
 }
-.relative  i:hover {
+.relative i:hover {
   color: var(--color-button-hover);
   cursor: pointer;
 }
