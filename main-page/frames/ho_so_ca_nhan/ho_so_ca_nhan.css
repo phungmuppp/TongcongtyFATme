@@ -1,0 +1,135 @@
+:root {
+    --color-primary: #ff5500;
+    --color-secondary: #ffb300;
+    --color-button-main: #ff5500;
+    --color-button-hover: #ff7C3a;
+    --color-button-edit: #ebebeb;
+    --color-background: #f6f6f6;
+  }
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 0;
+}
+.main_info{
+    padding: 15px;
+    width: 1250px;
+    height: 800px;
+}
+.menu{
+    float: left;
+    width: 230px;
+    height: 800px;
+}
+.page_info{
+    background-color: var(--color-background);
+    float: left;
+    width: 1020px;
+    height: 800px;
+}
+.frame_menu{
+    width: 230px;
+    height: 800px;
+}
+.info_container{
+    width: 1000px;
+    height: 100%;
+    margin-left: 1%;
+}
+.product ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.product li{
+    margin-right: 3rem;
+    list-style-type: none;
+    float: left;
+    height: 2.5rem;
+}
+.product i{
+    margin-right: 1rem;
+    color: var(--color-primary);
+}
+.product button{
+    background-color:var(--color-primary);
+    color: white;
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+}
+.product button:hover{
+    background-color: var(--color-button-hover);
+}
+.product li:last-child{
+    margin-left: auto;
+}
+.product a{
+    text-decoration: none;
+    color: black;
+}
+.all_product{
+    width: 99%;
+    height: 150px;
+    background-color: white;
+    margin-top: 2%;
+}
+
+.heading a{
+   
+    color: black;
+    text-decoration: none;
+}
+.heading {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+ 
+}
+
+  
+.heading :after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 4px;
+left: 0;
+background-color: var(--color-button-hover);
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.heading :hover:after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+/* .heading a:hover{
+    border-bottom: var(--color-button-hover);
+} */
+.nav_select{
+    height: 40px;
+    padding: 0 0 0 10px;
+}
+.nav_select select{
+    width: 120px;
+    background-color: var(--color-background);
+    height: 30px;
+}
+.nav_select button{
+    background-color: var(--color-primary);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    float: right;
+    margin-right: 1rem;
+}
+.nav_select i{
+    padding-right: 1%;
+}
+.nav_select button:hover{
+    background-color: var(--color-button-hover);
+}
