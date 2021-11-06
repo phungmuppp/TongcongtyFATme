@@ -30,7 +30,7 @@ body {
   max-width: 1400px;
 }
 .centered {
-  background-image: url(/main-page/images/background-img.gif);
+  background-image:url(../images/background-img.gif);
   height: 85px;
   background-repeat: no-repeat;
   background-size: cover;
